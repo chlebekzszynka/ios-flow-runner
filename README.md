@@ -253,6 +253,14 @@ Plik wynikowy (skrócony):
 }
 ```
 
+<p align="center">
+  <img src="docs/obrazy/przyklad-wynik.png" width="300" alt="Ekran About na symulatorze, z którego przebieg odczytał wersję iOS, nazwę i model">
+</p>
+<p align="center">
+  <sub>Zrzut zapisany automatycznie na końcu przebiegu — to z tego ekranu
+  pochodzą wartości w <code>odczyt</code>.</sub>
+</p>
+
 `odczyt` to wartości wyciągnięte wzorcem, `surowe` — pełny tekst elementu
 (do diagnozy, gdy wzorzec nie pasuje). Etykiety są po angielsku, bo taki
 jest domyślny język symulatora; przykład działa w każdym języku, bo
@@ -721,7 +729,9 @@ ios-flow-runner/
 │   ├── fixtures/                  zapisane drzewa XML ekranów
 │   ├── conftest.py                atrapa urządzenia
 │   └── test_*.py                  testy modułów
-├── docs/architektura.md           łańcuch sterowania i rola każdego elementu
+├── docs/
+│   ├── architektura.md            łańcuch sterowania i rola każdego elementu
+│   └── obrazy/                    zrzuty ekranu do README
 └── artifacts/                     wyniki przebiegów (poza repozytorium)
 ```
 
