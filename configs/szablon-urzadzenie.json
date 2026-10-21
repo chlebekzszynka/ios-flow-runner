@@ -1,0 +1,60 @@
+{
+  "_opis": "Szablon dla fizycznego iPhone'a. Skopiuj jako configs/moj-telefon.local.json (pliki *.local.json nie trafiają do gita) i uzupełnij puste pola.",
+  "_skad": {
+    "bundle_id": "ideviceinstaller list — identyfikator aplikacji, którą chcesz sterować",
+    "urzadzenie.udid": "idevice_id -l — telefon podłączony kablem i odblokowany",
+    "urzadzenie.team_id": "security find-identity -v -p codesigning — 10 znaków w nawiasie na końcu wiersza",
+    "urzadzenie.signing_id": "zwykle Apple Development",
+    "urzadzenie.wda_bundle_id": "Bundle Identifier ustawiony w Xcode dla celu WebDriverAgentRunner",
+    "kroki": "lokatory ustalisz poleceniem: python -m ios_flow.inspect <ten plik>"
+  },
+  "nazwa": "Ustawienia na telefonie: informacje o urządzeniu",
+  "tryb": "urzadzenie",
+  "serwer_appium": "http://127.0.0.1:4723",
+  "bundle_id": "com.apple.Preferences",
+
+  "urzadzenie": {
+    "udid": "",
+    "team_id": "",
+    "signing_id": "Apple Development",
+    "wda_bundle_id": ""
+  },
+
+  "sesja": {
+    "snapshot_max_depth": 50,
+    "new_command_timeout": 300,
+    "restart_aplikacji": true,
+    "dodatkowe_capabilities": {
+      "_opis": "Przy błędzie xcodebuild 65 ustaw showXcodeLog na true — Appium wypisze pełny log budowania WDA.",
+      "showXcodeLog": false
+    }
+  },
+
+  "kroki": [
+    {
+      "opis": "Ogólne",
+      "lokator": { "typ": "id", "wartosc": "com.apple.settings.general", "element": "Button" },
+      "czekaj_s": 15
+    },
+    {
+      "opis": "To urządzenie",
+      "lokator": { "typ": "id", "wartosc": "com.apple.settings.general.about", "element": "Button" }
+    }
+  ],
+
+  "odczyt": {
+    "wersja_systemu": {
+      "lokator": { "typ": "id", "wartosc": "SW_VERSION_SPECIFIER", "element": "Button" },
+      "wzorzec": "^[^,]+,\\s*(?P<wartosc>.+)$"
+    },
+    "nazwa_urzadzenia": {
+      "lokator": { "typ": "id", "wartosc": "NAME_CELL_ID", "element": "Button" },
+      "wzorzec": "^[^,]+,\\s*(?P<wartosc>.+)$"
+    }
+  },
+
+  "wynik": {
+    "katalog": "artifacts",
+    "zrzut_ekranu": true
+  }
+}

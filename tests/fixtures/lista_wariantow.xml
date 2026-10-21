@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="Settings" label="Settings" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="" bundleId="com.apple.Preferences">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="">
+      <XCUIElementTypeNavigationBar type="XCUIElementTypeNavigationBar" name="Variants" enabled="true" visible="true" accessible="false" x="0" y="62" width="402" height="54" index="0" traits="">
+        <XCUIElementTypeButton type="XCUIElementTypeButton" name="BackButton" label="General" enabled="true" visible="true" accessible="true" x="16" y="62" width="44" height="44" index="0" traits="Button"/>
+      </XCUIElementTypeNavigationBar>
+      <XCUIElementTypeTable type="XCUIElementTypeTable" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="1" traits="">
+        <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="140" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="VariantRow" label="20%" enabled="true" visible="true" accessible="true" x="16" y="140" width="370" height="52" index="0" traits="Button"/>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="192" width="370" height="52" index="1" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="VariantRow" label="20%HM, Until 2030-01-31" enabled="true" visible="true" accessible="true" x="16" y="192" width="370" height="52" index="0" traits="Button"/>
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="VariantRow/Info" label="More info" enabled="true" visible="true" accessible="true" x="340" y="207" width="30" height="22" index="1" traits="Button"/>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="244" width="370" height="52" index="2" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="VariantRow" label="Selected, 20%VM, Until 2030-02-28" enabled="true" visible="true" accessible="true" x="16" y="244" width="370" height="52" index="0" traits="Selected, Button"/>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="296" width="370" height="52" index="3" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="VariantRow" label="Tom's Option" enabled="true" visible="true" accessible="true" x="16" y="296" width="370" height="52" index="0" traits="Button"/>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeButton type="XCUIElementTypeButton" name="VariantRow" label="Text for screen reader: double tap to choose a variant" enabled="true" visible="true" accessible="true" x="0" y="0" width="1" height="1" index="4" traits="Button"/>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="false" x="16" y="900" width="370" height="52" index="5" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="VariantRow" label="30%" enabled="true" visible="false" accessible="true" x="16" y="900" width="370" height="52" index="0" traits="Button"/>
+        </XCUIElementTypeCell>
+      </XCUIElementTypeTable>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

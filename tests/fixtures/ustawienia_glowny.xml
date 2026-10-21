@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="Settings" label="Settings" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="" bundleId="com.apple.Preferences">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="">
+        <XCUIElementTypeCollectionView type="XCUIElementTypeCollectionView" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="">
+          <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Settings" name="Settings" label="Settings" enabled="true" visible="true" accessible="true" x="16" y="119" width="133" height="42" index="0" traits="Header"/>
+          <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="380" width="370" height="53" index="7" traits="">
+            <XCUIElementTypeButton type="XCUIElementTypeButton" name="com.apple.settings.general" label="General" enabled="true" visible="true" accessible="true" x="16" y="380" width="370" height="53" index="0" traits="StaticText, Button">
+              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="General" name="General" label="General" enabled="true" visible="true" accessible="false" x="30" y="392" width="102" height="29" index="1" traits="StaticText"/>
+            </XCUIElementTypeButton>
+          </XCUIElementTypeCell>
+          <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="432" width="370" height="53" index="8" traits="">
+            <XCUIElementTypeButton type="XCUIElementTypeButton" name="com.apple.settings.accessibility" label="Accessibility" enabled="true" visible="true" accessible="true" x="16" y="432" width="370" height="53" index="0" traits="StaticText, Button">
+              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Accessibility" name="Accessibility" label="Accessibility" enabled="true" visible="true" accessible="false" x="30" y="444" width="137" height="29" index="1" traits="StaticText"/>
+            </XCUIElementTypeButton>
+          </XCUIElementTypeCell>
+          <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="640" width="370" height="53" index="16" traits="">
+            <XCUIElementTypeButton type="XCUIElementTypeButton" name="com.apple.settings.homeScreen" label="Home Screen &amp; App Library" enabled="true" visible="true" accessible="true" x="16" y="640" width="370" height="53" index="0" traits="StaticText, Button">
+              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Home Screen &amp; App Library" name="Home Screen &amp; App Library" label="Home Screen &amp; App Library" enabled="true" visible="true" accessible="false" x="30" y="652" width="254" height="29" index="0" traits="StaticText"/>
+            </XCUIElementTypeButton>
+          </XCUIElementTypeCell>
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="Dictate" label="Dictate" enabled="true" visible="true" accessible="false" x="341" y="811" width="18" height="22" index="0" traits="Button"/>
+        </XCUIElementTypeCollectionView>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

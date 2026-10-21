@@ -1,0 +1,66 @@
+{
+  "_opis": "Ustawienia → Ogólne → To urządzenie: odczyt wersji iOS i nazwy urządzenia. Działa na symulatorze bez konta Apple Developer.",
+  "nazwa": "Ustawienia: informacje o urządzeniu",
+  "tryb": "symulator",
+  "serwer_appium": "http://127.0.0.1:4723",
+  "bundle_id": "com.apple.Preferences",
+
+  "symulator": {
+    "_skad": "xcrun simctl list devices available — nazwa urządzenia i wersja z nagłówka sekcji",
+    "nazwa_urzadzenia": "iPhone 17",
+    "wersja_ios": "27.0"
+  },
+
+  "sesja": {
+    "snapshot_max_depth": 50,
+    "new_command_timeout": 300,
+    "restart_aplikacji": true
+  },
+
+  "kroki": [
+    {
+      "opis": "Ogólne",
+      "lokator": { "typ": "id", "wartosc": "com.apple.settings.general", "element": "Button" },
+      "czekaj_s": 15,
+      "pauza_s": 1.0
+    },
+    {
+      "opis": "To urządzenie",
+      "lokator": { "typ": "id", "wartosc": "com.apple.settings.general.about", "element": "Button" },
+      "czekaj_s": 10,
+      "pauza_s": 1.0
+    }
+  ],
+
+  "odczyt": {
+    "_wzorzec": "Etykieta wiersza to „Nazwa pola, wartość”; bierzemy część po pierwszym przecinku.",
+    "wersja_systemu": {
+      "lokator": { "typ": "id", "wartosc": "SW_VERSION_SPECIFIER", "element": "Button" },
+      "atrybut": "label",
+      "wzorzec": "^[^,]+,\\s*(?P<wartosc>.+)$"
+    },
+    "nazwa_urzadzenia": {
+      "lokator": { "typ": "id", "wartosc": "NAME_CELL_ID", "element": "Button" },
+      "atrybut": "label",
+      "wzorzec": "^[^,]+,\\s*(?P<wartosc>.+)$"
+    },
+    "model": {
+      "lokator": { "typ": "id", "wartosc": "ProductModelName", "element": "Button" },
+      "atrybut": "label",
+      "wzorzec": "^[^,]+,\\s*(?P<wartosc>.+)$"
+    }
+  },
+
+  "lista": {
+    "_opis": "Dla --lista: wszystkie wiersze ekranu To urządzenie, z przewijaniem.",
+    "element": "Button",
+    "wzorzec": "^(?P<nazwa>[^,]+),\\s*(?P<wartosc>.+)$",
+    "tylko_pasujace": true,
+    "max_przewiniec": 10
+  },
+
+  "wynik": {
+    "katalog": "artifacts",
+    "zrzut_ekranu": true
+  }
+}

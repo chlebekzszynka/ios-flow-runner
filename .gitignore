@@ -1,0 +1,21 @@
+# Środowisko Pythona
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Wyniki przebiegów (JSON, zrzuty ekranu, drzewa XML)
+artifacts/
+
+# Prywatne konfiguracje — w repozytorium są tylko przykład i szablon
+configs/*.local.json
+
+# macOS i edytory
+.DS_Store
+.vscode/
+.idea/
+
+# Wzorce audytu danych wrażliwych — lokalne, nigdy w repozytorium
+# (sam wzorzec zawiera nazwy, których w repozytorium ma nie być).
+.audyt-wzorce

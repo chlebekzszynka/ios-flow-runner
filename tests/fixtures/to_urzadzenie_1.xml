@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="Settings" label="Settings" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="" bundleId="com.apple.Preferences">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="">
+      <XCUIElementTypeNavigationBar type="XCUIElementTypeNavigationBar" name="About" enabled="true" visible="true" accessible="false" x="0" y="62" width="402" height="54" index="0" traits="">
+        <XCUIElementTypeButton type="XCUIElementTypeButton" name="BackButton" label="General" enabled="true" visible="true" accessible="true" x="16" y="62" width="44" height="44" index="0" traits="Button"/>
+        <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="About" name="About" label="About" enabled="true" visible="true" accessible="true" x="175" y="75" width="52" height="22" index="1" traits="Header"/>
+      </XCUIElementTypeNavigationBar>
+      <XCUIElementTypeTable type="XCUIElementTypeTable" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="1" traits="">
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="NAME_CELL_ID" label="Name, iPhone" enabled="true" visible="true" accessible="false" x="16" y="140" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="NAME_CELL_ID" label="Name, iPhone" enabled="true" visible="true" accessible="true" x="16" y="140" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Name" name="Name" label="Name" enabled="true" visible="true" accessible="false" x="32" y="155" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="iPhone" name="iPhone" label="iPhone" enabled="true" visible="true" accessible="false" x="250" y="155" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="SW_VERSION_SPECIFIER" label="iOS Version, 27.0" enabled="true" visible="true" accessible="false" x="16" y="192" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="SW_VERSION_SPECIFIER" label="iOS Version, 27.0" enabled="true" visible="true" accessible="true" x="16" y="192" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="iOS Version" name="iOS Version" label="iOS Version" enabled="true" visible="true" accessible="false" x="32" y="207" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="27.0" name="27.0" label="27.0" enabled="true" visible="true" accessible="false" x="250" y="207" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeButton type="XCUIElementTypeButton" name="chevron" label="chevron" enabled="false" visible="true" accessible="true" x="360" y="207" width="10" height="22" index="2" traits="NotEnabled, Button"/>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="ProductModelName" label="Model Name, iPhone 17" enabled="true" visible="true" accessible="false" x="16" y="244" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="ProductModelName" label="Model Name, iPhone 17" enabled="true" visible="true" accessible="true" x="16" y="244" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Model Name" name="Model Name" label="Model Name" enabled="true" visible="true" accessible="false" x="32" y="259" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="iPhone 17" name="iPhone 17" label="iPhone 17" enabled="true" visible="true" accessible="false" x="250" y="259" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="ProductModel" label="Model Number, A3258ZE/A" enabled="true" visible="true" accessible="false" x="16" y="296" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="ProductModel" label="Model Number, A3258ZE/A" enabled="true" visible="true" accessible="true" x="16" y="296" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Model Number" name="Model Number" label="Model Number" enabled="true" visible="true" accessible="false" x="32" y="311" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="A3258ZE/A" name="A3258ZE/A" label="A3258ZE/A" enabled="true" visible="true" accessible="false" x="250" y="311" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="SerialNumber" label="Serial Number, F2LXK0Q1N7" enabled="true" visible="true" accessible="false" x="16" y="348" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="SerialNumber" label="Serial Number, F2LXK0Q1N7" enabled="true" visible="true" accessible="true" x="16" y="348" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Serial Number" name="Serial Number" label="Serial Number" enabled="true" visible="true" accessible="false" x="32" y="363" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="F2LXK0Q1N7" name="F2LXK0Q1N7" label="F2LXK0Q1N7" enabled="true" visible="true" accessible="false" x="250" y="363" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="SONGS" label="Songs, 0" enabled="true" visible="true" accessible="false" x="16" y="420" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="SONGS" label="Songs, 0" enabled="true" visible="true" accessible="true" x="16" y="420" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Songs" name="Songs" label="Songs" enabled="true" visible="true" accessible="false" x="32" y="435" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="0" name="0" label="0" enabled="true" visible="true" accessible="false" x="250" y="435" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="VIDEOS" label="Videos, 0" enabled="true" visible="true" accessible="false" x="16" y="472" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="VIDEOS" label="Videos, 0" enabled="true" visible="true" accessible="true" x="16" y="472" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Videos" name="Videos" label="Videos" enabled="true" visible="true" accessible="false" x="32" y="487" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="0" name="0" label="0" enabled="true" visible="true" accessible="false" x="250" y="487" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="PHOTOS" label="Photos, 6" enabled="true" visible="true" accessible="false" x="16" y="524" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="PHOTOS" label="Photos, 6" enabled="true" visible="true" accessible="true" x="16" y="524" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Photos" name="Photos" label="Photos" enabled="true" visible="true" accessible="false" x="32" y="539" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6" name="6" label="6" enabled="true" visible="true" accessible="false" x="250" y="539" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="APPLICATIONS" label="Applications, 1" enabled="true" visible="true" accessible="false" x="16" y="576" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="APPLICATIONS" label="Applications, 1" enabled="true" visible="true" accessible="true" x="16" y="576" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Applications" name="Applications" label="Applications" enabled="true" visible="true" accessible="false" x="32" y="591" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="1" name="1" label="1" enabled="true" visible="true" accessible="false" x="250" y="591" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="User Data Capacity" label="Capacity, 494, 38 GB" enabled="true" visible="true" accessible="false" x="16" y="648" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="User Data Capacity" label="Capacity, 494,38 GB" enabled="true" visible="true" accessible="true" x="16" y="648" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Capacity" name="Capacity" label="Capacity" enabled="true" visible="true" accessible="false" x="32" y="663" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="494,38 GB" name="494,38 GB" label="494,38 GB" enabled="true" visible="true" accessible="false" x="250" y="663" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="User Data Available" label="Available, 297, 05 GB" enabled="true" visible="true" accessible="false" x="16" y="700" width="370" height="52" index="0" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="User Data Available" label="Available, 297,05 GB" enabled="true" visible="true" accessible="true" x="16" y="700" width="370" height="52" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Available" name="Available" label="Available" enabled="true" visible="true" accessible="false" x="32" y="715" width="120" height="22" index="0" traits="StaticText"/>
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="297,05 GB" name="297,05 GB" label="297,05 GB" enabled="true" visible="true" accessible="false" x="250" y="715" width="120" height="22" index="1" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" name="CERT_TRUST_SETTINGS" label="Certificate Trust Settings" enabled="true" visible="true" accessible="true" x="16" y="772" width="370" height="52" index="0" traits="Button">
+          <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Certificate Trust Settings" name="Certificate Trust Settings" label="Certificate Trust Settings" enabled="true" visible="true" accessible="false" x="32" y="787" width="220" height="22" index="0" traits="StaticText"/>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeOther type="XCUIElementTypeOther" value="0%" name="Vertical scroll bar, 2 pages" label="Vertical scroll bar, 2 pages" enabled="true" visible="false" accessible="true" x="394" y="116" width="8" height="724" index="9" traits="Adjustable"/>
+      </XCUIElementTypeTable>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

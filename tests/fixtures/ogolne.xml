@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="Settings" label="Settings" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="" bundleId="com.apple.Preferences">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="0" traits="">
+      <XCUIElementTypeNavigationBar type="XCUIElementTypeNavigationBar" name="General" enabled="true" visible="true" accessible="false" x="0" y="62" width="402" height="54" index="0" traits="">
+        <XCUIElementTypeButton type="XCUIElementTypeButton" name="BackButton" label="Settings" enabled="true" visible="true" accessible="true" x="16" y="62" width="44" height="44" index="0" traits="Button"/>
+        <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="General" name="General" label="General" enabled="true" visible="false" accessible="true" x="171" y="75" width="60" height="22" index="1" traits="StaticText"/>
+      </XCUIElementTypeNavigationBar>
+      <XCUIElementTypeCollectionView type="XCUIElementTypeCollectionView" enabled="true" visible="true" accessible="false" x="0" y="0" width="402" height="874" index="1" traits="">
+        <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="331" width="370" height="53" index="2" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="com.apple.settings.general.about" label="About" enabled="true" visible="true" accessible="true" x="16" y="331" width="370" height="53" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="About" name="About" label="About" enabled="true" visible="true" accessible="false" x="30" y="343" width="60" height="29" index="0" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="383" width="370" height="53" index="3" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="com.apple.settings.general.keyboard" label="Keyboard" enabled="true" visible="true" accessible="true" x="16" y="383" width="370" height="53" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Keyboard" name="Keyboard" label="Keyboard" enabled="true" visible="true" accessible="false" x="30" y="395" width="88" height="29" index="0" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+        <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="false" x="16" y="435" width="370" height="53" index="4" traits="">
+          <XCUIElementTypeButton type="XCUIElementTypeButton" name="com.apple.settings.general.languageAndRegion" label="Language &amp; Region" enabled="true" visible="true" accessible="true" x="16" y="435" width="370" height="53" index="0" traits="StaticText, Button">
+            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Language &amp; Region" name="Language &amp; Region" label="Language &amp; Region" enabled="true" visible="true" accessible="false" x="30" y="447" width="180" height="29" index="0" traits="StaticText"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeCell>
+      </XCUIElementTypeCollectionView>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>
