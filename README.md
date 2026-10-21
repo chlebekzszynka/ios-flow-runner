@@ -51,10 +51,19 @@ dowolny język i dowolna aplikacja na wierzchu.
 
 ## 2. Jak to działa
 
-```
-python -m ios_flow.run          Appium               WebDriverAgent          aplikacja
-  (ten projekt, Mac)   ──HTTP──▶  (Mac, port 4723) ──HTTP──▶ (iPhone/symulator, ──XCUITest──▶ (np. Ustawienia)
-                                                              port 8100)
+```mermaid
+flowchart LR
+    subgraph MAC["💻 Mac"]
+        S["<b>Skrypt</b><br/>python -m ios_flow.run<br/>+ configs/*.json"]
+        A["<b>Appium</b><br/>serwer, port 4723<br/>driver XCUITest"]
+    end
+    subgraph DEV["📱 iPhone albo symulator"]
+        W["<b>WebDriverAgent</b><br/>port 8100"]
+        X["<b>Aplikacja</b><br/>np. Ustawienia"]
+    end
+    S -- "HTTP" --> A
+    A -- "HTTP" --> W
+    W -- "XCUITest" --> X
 ```
 
 1. **Skrypt** (`ios_flow`) czyta konfigurację i wysyła polecenia w rodzaju
