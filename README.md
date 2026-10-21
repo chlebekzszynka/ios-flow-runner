@@ -9,6 +9,9 @@
   <img src="https://img.shields.io/badge/sponsored%20by-chlebek%20z%20szynk%C4%85-ffd43b">
 </p>
 
+Framework do automatyzacji aplikacji iOS przez Appium, w którym cała ścieżka nawigacji siedzi w pliku JSON, a kod nie zna żadnej konkretnej aplikacji.
+Dołączony przykład działa na symulatorze iPhone'a od razu — bez konta Apple Developer, bez podpisywania i bez fizycznego telefonu. Testy (131) działają bez urządzenia, na zapisanych drzewach elementów.
+
 ## Spis treści
 
 1. [Co to jest](#1-co-to-jest)
@@ -20,7 +23,8 @@
 7. [Decyzje projektowe](#7-decyzje-projektowe)
 8. [Problemy i jak je rozwiązałem](#8-problemy-i-jak-je-rozwiązałem)
 9. [Testy](#9-testy)
-10. [Struktura projektu](#10-struktura-projektu)
+10. [Jak to powstało](#10-jak-to-powstało)
+11. [Struktura projektu](#11-struktura-projektu)
 
 ---
 
@@ -667,7 +671,27 @@ trybów i komunikaty walidacji.
 Nowa logika parsowania = nowa fikstura + test. Opis fikstur:
 [tests/fixtures/README.md](tests/fixtures/README.md).
 
-## 10. Struktura projektu
+## 10. Jak to powstało
+
+Projekt napisałem we współpracy z Claude Code. W repozytorium zostały po tym
+ślady, których używam na co dzień:
+
+- **[CLAUDE.md](CLAUDE.md)** — zasady projektu i pułapki techniczne wraz
+  z uzasadnieniem. Każda sesja zaczyna z czystym kontekstem, więc wiedza
+  o projekcie musi być zapisana, a nie opowiedziana.
+- **[.claude/skills/namierzanie-lokatorow](.claude/skills/namierzanie-lokatorow/SKILL.md)**
+  — procedura mapowania nowego ekranu, spisana raz i wykonywana tak samo
+  przez człowieka i przez agenta.
+- **[.claude/commands/chlebek.md](.claude/commands/chlebek.md)** — `/chlebek`:
+  kontrola przed wydaniem (testy, lint, audyt sekretów, wpis w CHANGELOG).
+- **[.claude/agents/recenzent.md](.claude/agents/recenzent.md)** — przegląd
+  zmian pod kątem reguł projektu: czy lokator nie wyciekł do kodu, czy nowa
+  logika ma test, czy komunikat błędu mówi użytkownikowi, co zrobić.
+
+Decyzje projektowe z rozdziału 7 i rozwiązania z rozdziału 8 wzięły się
+z realnych awarii napotkanych przy budowie, nie z lektury dokumentacji.
+
+## 11. Struktura projektu
 
 ```
 ios-flow-runner/
